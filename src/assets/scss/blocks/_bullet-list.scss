@@ -1,0 +1,27 @@
+.bullet-list {
+  padding-left: 0;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  margin: 8px 0 16px;
+
+  li {
+    list-style: none;
+    color: $color-grey;
+    padding-left: 8px;
+    line-height: 22px;
+    margin-bottom: 4px;
+  }
+
+  li:before {
+    content: '';
+    width: 6px;
+    height: 14px;
+    display: inline-block;
+    transform: rotate(45deg) translateY(3px);
+    border-right: 2px solid $color-green;
+    border-bottom: 2px solid $color-green;
+    margin-right: 14px;
+  }
+}

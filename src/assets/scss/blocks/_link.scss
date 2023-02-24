@@ -1,0 +1,36 @@
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 5px 0 0;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  text-decoration: none;
+  color: $color-default;
+
+  &--arrow {
+    position: relative;
+    padding-right: 20px;
+
+    &::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      transform: rotate(-45deg);
+      border-right: 2px solid $color-default;
+      border-bottom: 2px solid $color-default;
+      right: 0;
+    }
+
+    &::after {
+      content: '';
+      width: 10px;
+      height: 2px;
+      background: $color-default;
+      position: absolute;
+      right: 0;
+    }
+  }
+}

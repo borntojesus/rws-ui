@@ -1,0 +1,18 @@
+.image {
+  &--round {
+    border-radius: 16px;
+  }
+
+  &--item-logo {
+    width: 84px;
+  }
+
+  @media (min-width: 768px) {
+    &--round {
+      border-radius: 26px;
+    }
+    &--item-logo {
+      width: 180px;
+    }
+  }
+}
